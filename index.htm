@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mode</title>
+    <script src="script.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+     
+        .Allmodeon{
+           background-color: black;
+           color: white;
+           transition: 0.4s ease-in-out;
+
+        }
+
+     
+
+        .content-mode.dark{
+           background-color: rgba(0, 0, 0, 0.94);
+           color: rgb(254, 255, 251);
+           transition: 0.4s ease-in-out;
+
+        }
+      
+        h1 {
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(255, 182, 36);
+            border-bottom: 4px solid;
+            /* margin-bottom: 1rem; */
+
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        .content{
+
+            padding:2rem;
+            
+        }
+
+        .contentchange {
+            margin-top: 2rem;
+        }
+
+        .contentchange h2 {
+            margin-top: 1rem;
+            border: 2px solid rgb(23, 23, 207);
+            padding: 30px 20px;
+            background-color: white;
+            color: black;
+    
+        }
+    </style>
+
+
+</head>
+
+
+
+<body>
+    <h1>Light & Dark mode</h1>
+    <div class="content ">
+        <label for="darkmode">Darkmode:</label>
+        <input type="checkbox" id="darkmode" class="darkmodeall">
+        <h2>The entire page color theme is controlled using CSS and JavaScript</h2>
+
+        <div class="contentchange">
+            <label for="darkmodecontent">Content Darkmode:</label>
+            <input type="checkbox" id="darkmodecontent" class="onlycontent">
+            <h2 class="content-mode ">The container color scheme is controlled by only CSS</h2>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
