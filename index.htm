@@ -11,6 +11,11 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        body{
+            background-color: rgb(233, 255, 255);
         }
 
      
@@ -44,7 +49,7 @@
         }
 
         .content{
-
+         min-height: 90vh;
             padding:2rem;
             
         }
@@ -61,6 +66,16 @@
             color: black;
     
         }
+        .cursor{
+            position: absolute;
+            height: 30px;width: 30px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            cursor: pointer;
+            mix-blend-mode: difference;
+            transition: all linear 0.3s ;
+         
+        }
     </style>
 
 
@@ -69,12 +84,15 @@
 
 
 <body>
-    <h1>Light & Dark mode</h1>
+
+  <div class="cursor"></div>
+        <h1>Light & Dark mode</h1>
+        
     <div class="content ">
         <label for="darkmode">Darkmode:</label>
         <input type="checkbox" id="darkmode" class="darkmodeall">
         <h2>The entire page color theme is controlled using CSS and JavaScript</h2>
-
+       
         <div class="contentchange">
             <label for="darkmodecontent">Content Darkmode:</label>
             <input type="checkbox" id="darkmodecontent" class="onlycontent">
@@ -82,6 +100,8 @@
         </div>
 
     </div>
+   
+ 
 
 </body>
 

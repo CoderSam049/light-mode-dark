@@ -80,5 +80,12 @@ function changeTheme(changelbtn,elemenName){
 
 
 
+const cursor= document.querySelector('.cursor');
+const main= document.querySelector('main')
 
+document.body.addEventListener('mousemove',(e)=>{
+
+    cursor.style.left= e.x+"px"
+    cursor.style.top= e.y+"px"
+})
 
